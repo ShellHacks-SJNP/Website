@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <style> 
+            .flex-container {
+              display: -webkit-flex;
+              display: flex;  
+              -webkit-flex-flow: row wrap;
+              flex-flow: row wrap;
+              font-weight: bold;
+              text-align: center;
+            }
+            
+            .flex-container > * {
+              padding: 10px;
+              flex: 1 100%;
+            }
+            
+            .main {
+              text-align: left;
+              background: black;
+              
+            }
+            
+            .aside1 {background: black;}
+            .aside2 {background: black;}
+            
+            .landingpageIconSection{
+                border-radius:50%;
+            }
+
+            @media all and (min-width: 768px) {
+              .aside { flex: 1 auto; }
+              .main    { flex: 3 0px; }
+              .aside1 { order: 1; }
+              .main    { order: 2; }
+              .aside2 { order: 3; }
+              .footer  { order: 4; }
+            }
+            </style>
+    </head>
+
+<body>
+    <div class="flex-container" >
+        <aside class="aside aside1" aria-label="Left"></aside>
+        <article class="main">
+            <img src=".\src\header.jpg" alt="Pacman" width="100%" height="200">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">About Us</h1>
+                  <p class="lead">Text introducing us</p>
+                </div>
+              </div>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm" style="text-align: center;";>
+                            <img class="landingpageIconSection" src="src\gameicon.png" alt="gameicon" height="75px" height="75px">
+                            <p>Games</p>
+                            <p>Come and play our awesome games!
+                            I'm sure you will enjoy them!
+                            </p>
+                        </div>
+                        <div class="col-sm" style="text-align: center;";>
+                            <img class="landingpageIconSection" src="src\chaticon.png" alt="chaticon" height="75px" height="75px">
+                            <p>Chat</p>
+                            <p>Come and say hi on our chat!
+                            I'm sure you will make a few friends.
+                            </p>
+                        </div>
+                        <div class="col-sm" style="text-align: center;";>
+                            <img class="landingpageIconSection" src="src\forumicon.png" alt="forumicon" height="75px" height="75px">
+                            <p>Discussion</p>
+                            <p>Want to discuss the meaning of life
+                            or simply vent a little? Check out our
+                            discusion board!
+                            </p>
+                        </div>
+                        <div class="col-sm" style="text-align: center;";>
+                            <img class="landingpageIconSection" src="src\blogicon.png" alt="blogicon" height="75px" height="75px">
+                            <p>Blog</p>
+                            <p>Want to learn something new? Want to see what is going on in other people's lives? Check our blog!
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-6">Meet the Team:</h1><br>
+                    <div class="row">
+                        <div class="col-sm" style="text-align: center;";>
+                            <img class="landingpageIconSection" src="src\preprofilepic.png" alt="preprofilepic" height="75px" height="75px">
+                            <p>Prerna Singh</p>
+                            <p>Short Description of Prerna</p>
+                        </div>
+                        <div class="col-sm" style="text-align: center;";>
+                            <img class="landingpageIconSection" src="src\wjprofilepic.png" alt="wjprofilepic" height="75px" height="75px">
+                            <p>Jalen Veiga</p>
+                            <p>Short Description of Whalenjalen</p>
+                        </div>
+                        <div class="col-sm" style="text-align: center;";>
+                            <img class="landingpageIconSection" src="src\forumicon.png" alt="forumicon" height="75px" height="75px">
+                            <p>Sejal Nathu-Hari</p>
+                            <p>Short Description of Sejalnh</p>
+                        </div>
+                        <div class="col-sm" style="text-align: center;";>
+                            <img class="landingpageIconSection" src="src\oaprofilepic.png" alt="OAprofilepic" height="75px" height="75px">
+                            <p>Oreste Arredondo</p>
+                            <p>Passionate Gamer that loves solving puzzles!</p>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </article>
+        <aside class="aside aside2" aria-label="Right"></aside>
+    </div>
+</body>
+
+</html>
